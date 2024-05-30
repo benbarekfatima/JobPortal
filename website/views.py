@@ -11,6 +11,12 @@ from .models import Employer, Employee, Job, Application
 from .forms import UserForm, EmployerSignUpForm, EmployeeSignUpForm, UserLoginForm
 import datetime
 
+import torch
+from .recommend.graph import add_node_user,add_node_job,modify_node_user,modify_node_job
+from .recommend.preprocess import preprocess_resume,preprocess_text
+from .recommend.recommeder import recommend_top_k
+from .recommend import global_vars
+
 
 def home(request):
     context = {'message': 'Welcome to your Website App!'}
@@ -55,6 +61,14 @@ def employee_signup(request):
             employee.email = user.email
             employee.save()
             login(request, user)
+
+ 
+            resume_file = employee.resume.path
+            text,topic = preprocess_resume(resume_file)
+            data=torch.load(global_vars.graph_path)
+            data=add_node_user(data, userID=employee.employee_id, text=text, topic=topic)
+            torch.save(data,global_vars.graph_path)
+
             employee_group= Group.objects.get(name='Employee')
             employee_group.user_set.add(user)
             return render(request, 'redirectionPage.html')
@@ -89,7 +103,6 @@ def user_login(request):
                     return render(request,'waitforvalidation.html')
     else:
         login_form = UserLoginForm()
-
     return render(request, 'login.html', {'login_form': login_form})
 
 def user_logout(request):
@@ -126,6 +139,13 @@ def addNewJob(request, employer_id):
         new_job = Job(title = title, employer=employer, description=desc, location=location, requirements=requirements, salary=salary,
                     closing_date=closing_date)
         new_job.save()
+        
+        text_job= title + " "+desc+" "+requirements
+        text,topic = preprocess_text(text_job)
+        data=torch.load(global_vars.graph_path)
+        data=add_node_job(data, jobID=new_job.job_id, text=text, topic=topic)
+        torch.save(data,global_vars.graph_path)
+
         return HttpResponseRedirect(f'/project/jobs/{employer_id}')
     else:
         return render(request, 'addnewjob.html', {'employer_id':employer_id})
@@ -140,6 +160,13 @@ def editJob(request, employer_id, job_id):
         job.location = request.POST.get('location')
         job.closing_date = request.POST.get('closing-date')
         job.save()
+
+        text_job= job.title + " "+job.description+" "+job.requirements
+        text,topic = preprocess_text(text_job)
+        data=torch.load(global_vars.graph_path)
+        data=modify_node_job(data, jobID=job_id, new_text=text, new_topic=topic)
+        torch.save(data,global_vars.graph_path)
+
         return HttpResponseRedirect(f'/project/jobs/{employer_id}')
     else:
         job = Job.objects.get(job_id=job_id)
@@ -192,6 +219,7 @@ def displayJobRecommandations(request, applicant):
     for job in jobs_list:
         employer = Employer.objects.get(employer_id = job['employer_id'])
         data.append((job, employer.name))
+        
     return render(request, 'recommandations.html', {"jobs":data})
 
 def viewJobDetails(request, applicant, job_id):
