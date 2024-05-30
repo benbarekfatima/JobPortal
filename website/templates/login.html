@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      body {
+        background: #ffffff;
+        font-family: "Poppins", sans-serif;
+      }
+      .topnav {
+        background-color: #000000;
+        overflow: hidden;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 13px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        background-color: #ffffff;
+        color: rgb(75, 73, 73);
+      }
+
+      form {
+        margin: 100px;
+        width: 25%;
+        background-color: white;
+        padding: 40px;
+        border-radius: 1px;
+        box-shadow: 0 0 10px rgb(185 185 185);
+      }
+
+      label {
+        display: block;
+
+        margin-bottom: 15px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        border: 1px solid silver;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        background-color: #1d4dc1;;
+        color: white;
+        width: 100%;
+        height: 42px;
+        font-size: 15px;       
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #b5b5b5;
+        color: #000000;
+        border-radius: 25px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form method="post" action="{% url 'login' %}">
+        <p style="font-size: 27px; text-align: center">LOGIN</p>
+        <br />
+        <br />
+        {% csrf_token %} {{ login_form.as_p }}
+        <p style="text-align: center">
+          <input type="submit" value="Login" />
+        </p>
+        <p style="text-align: center">
+          <br />
+          Don't have an account?
+          <br />
+          <a href="{% url 'employer-signup' %}">Register as an employer</a>
+          <br />
+          <a href="{% url 'employee-signup' %}">Register as an employee</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

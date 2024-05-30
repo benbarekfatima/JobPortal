@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employer Profile</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: #f1f2f3;
+        /* overflow: hidden; */
+      }
+      .topnav {
+        background-color: #ffffff;
+        overflow: hidden;
+        box-shadow: 0px 0px 7px #eaeaea;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        float: left;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Change the color of links on hover */
+      .topnav a:hover {
+        color: #3b47f3;
+        background-color: #e5e6ff;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .bottom-nav {
+        background-color: #aba8a8;
+        /* display: flex; */
+        /* justify-content: space-around; */
+        /* align-items: center; */
+
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 20%;
+      }
+
+      .bottom-nav a {
+        color: #fff;
+        /* text-align: center; */
+        padding: 20px 30px;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .bottom-nav {
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .bottom-nav a {
+          flex: 1;
+        }
+      }
+      .about-us {
+        font-size: 13px;
+        padding-right: 30px;
+        padding-left: 30px;
+        /* padding-bottom: 30px; */
+        color: #ffffff;
+        text-align: center;
+      }
+      .img-style {
+        height: 250px;
+        width: 100%;
+        /* padding-left: 1000px; */
+        /* padding-top: 100px; */
+      }
+      .home-style {
+        padding: 20px;
+      }
+     /* Add your CSS styles here */
+     .profile-section {
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    .profile-section h2 {
+      margin-bottom: 10px;
+    }
+    .profile-section p {
+      margin-bottom: 5px;
+    }
+    .profile-details {
+      display: flex;
+      margin-top: 20px;
+    }
+    .personal-info,
+    .location-info {
+      flex: 1;
+    }
+    button {
+        background-color: #3b47f3;
+        color: white;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+      button:hover {
+        background-color: #7d85f7;
+      }
+      
+      .profile_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 650px; /* Adjust the width as needed */
+        height: 500px; /* Adjust the height as needed */
+        background-color:  #f1f2f3; /* Background color for the container */
+        margin-left: 500px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
+      
+      .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px; /* Adjust the width as needed */
+      height: 200px; /* Adjust the height as needed */
+      border-radius: 50%; /* Ensure the container is a circle */
+      background-color: #f0f0f0; /* Background color for the container */
+      margin-left: 90px;
+       }
+      .img-style {
+        width: 150px; /* Adjust the width of the image */
+        height: 150px; /* Adjust the height of the image */
+        border-radius: 50%; /* Ensure the image is a circle */
+          }
+    </style>
+  </head>
+  <body>
+      <div>
+        <div class="topnav">
+          <div>
+            <a href="" style="font-weight: bold">iWork</a>
+            <a href="{% url 'display_jobs' applicant=1 %}" style="font-weight: bold">Jobs</a>
+          </div>
+          <div>
+            <a href="{% url 'logout' %}" style="float: right; font-weight: bold">Logout</a>
+          </div>
+        </div>
+      <div class="profile_container">
+        <main>
+        <div class="img-container">
+          {% load static %}
+  
+          <img
+            class="img-style"
+            src="{% static 'images/user.jpg' %}"
+            alt="user profile"
+          />
+        </div>
+        <div class="profile-section">
+          <div class="profile-details">
+            <!-- Personal Information -->
+            <div class="personal-info">
+             
+              <p><strong>Name:</strong> {{ employee_profile.name }}</p>
+              <p><strong>Email:</strong> {{ employee_profile.email }}</p>
+             
+            </div>
+            <!-- Location Information -->
+            <div class="location-info">
+            
+              <p><strong>Location:</strong> {{ employee_profile.location }}</p>
+              <p><strong>Phone Number:</strong> {{ employee_profile.phone_number }}</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="profile-section">
+          <p><strong>Skills:</strong> {{ employee_profile.skills }}</p>
+          <p><strong>link:</strong> <a target="_blank" href="{{employee_profile.link}}">Contact</a></p>
+         
+          <p><strong>major:</strong>{{ employee_profile.major }}</p>
+          <p><strong>degree:</strong>{{ employee_profile.degree }}</p>
+          <p><strong>resume:</strong> <a target="_blank" href="/project/{{employee_profile.resume}}">View</a></p>
+        </div>
+        
+        <button><a href="{% url 'edit_employee_profile' %}" style="color: #ffffff; text-decoration: none;">Edit Profile</a></button>
+     </main>
+
+  </body>
+
+    <!-- Add other fields as needed -->
+  </body>
+</html>
+
+
