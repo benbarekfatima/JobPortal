@@ -213,14 +213,42 @@ def applyToJob(request, applicant, job_id):
         return render(request, 'employeeJobBoard.html', {"jobs":data, "applicant": applicant, "success":success, "error":error})
         
 def displayJobRecommandations(request, applicant):
-    jobs_list = list(Job.objects.filter(category = "Tech").values())
-    print('jobs', jobs_list)
-    data=[]
-    for job in jobs_list:
-        employer = Employer.objects.get(employer_id = job['employer_id'])
+    # Load the model and data
+    data = torch.load(global_vars.graph_path)
+    print(data['user'])
+    print(data['job'])
+    model = global_vars.model
+    # Get the number of jobs in the database
+    num_jobs = Job.objects.count()
+    print(num_jobs)
+    # Get top K recommended job IDs
+    top_k_job_ids = recommend_top_k(applicant, data, model, k=num_jobs)
+    print("tok k")
+    print(top_k_job_ids)
+    # Filter available job IDs from the recommended ones
+    available_job_ids = set(Job.objects.filter(job_id__in=top_k_job_ids).values_list('job_id', flat=True))
+    print("available")
+    print(available_job_ids)
+    # Maintain the order of job IDs and filter out those not in the database
+    ordered_job_ids = [job_id for job_id in top_k_job_ids if job_id in available_job_ids]
+    print("ordered")
+    print(ordered_job_ids)
+    # Limit to the first 10 jobs
+    top_10_job_ids = ordered_job_ids[:3]
+    print("top 10")
+    print(top_10_job_ids)
+    # Retrieve the jobs in the desired order
+    ordered_jobs = [Job.objects.get(job_id=job_id) for job_id in top_10_job_ids]
+    print("ordered")
+    print(ordered_jobs)
+    # Pair the jobs with their respective employers
+    data = []
+    for job in ordered_jobs:
+        employer = Employer.objects.get(employer_id=job.employer.employer_id)
         data.append((job, employer.name))
-        
-    return render(request, 'recommandations.html', {"jobs":data})
+
+    return render(request, 'recommandations.html', {"jobs": data})
+
 
 def viewJobDetails(request, applicant, job_id):
     try:
