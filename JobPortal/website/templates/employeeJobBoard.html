@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Payroll</title>
+    <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=GFWMLnakN1YV_B9pdrkPLPrHo1XpplcUeTPW0vad4vgR03ohf2JnulG_x5lSCJFsdyM0Q6X5cX8IqbNCjydjCiC9v1PKsP6EOJ6vYEddNMHq4eHYVMGpioMdmxxiD7JQYXZz9qkKPZo3YacSJZ7jsMPHm9nbqTKrODxH-ezyrqkMz351HLH6_obL7Qg7wW2XbsT-hzPlahcqXz-hDh4XHVgo2k4RN0IJts1zM3PJZHvpFg-UANtgt1zutJdSzgxM02QgJ2S9FNjBVV30foKSytLKHa4VqTGNyVQNZhiSZftGWhwwW5i66vqSkQ9rb8Dx5eCeLgJ3BqWAn0ugNFnkVGF7-ZsQaXj-aXjazEI49XWk3ExWkPXrecgnNqSC4q2oqnYZdRh0fUo2a5P_T_K9uVSxELr0_8n34K385-0AMTl1W1eGqevRRPTzkMjUnibk4f_W1VLMVMdlnjByv1DPfK3oVSsrxT6sxsAUZszoS22MUbIKxXhlBoJfacRZ8BhRCrVsvPbN1EIiYHXub_RTAReP6RlMcopgA-lUdR9bT9FnSE_aQBMTq1MiRYBH0HaqB95MLkk9ze_dEVQRnW5d9rf3nMQvvJBcmucC-sZBB0NTfaTIDvXy6KV3_VJ7bQC5d33iqQcfSvnnJJk7bxXflc6iKbfkfwcLnZKsxkU_4IBekbCu4a6IQH8DSdpVHptX2EFmr27g1uEuYs-le84EFcE3E2svD_b7fLE4O2tZxDPGBOnY7vJgWUuI3R8SY8Qddd7lf4RN4mgYqDcVCBkupapck0qARnugLBJ-RARTNN2r_dHRzewBWKBdDY_wFDaNt1LbftgoyVPbKvU3zGRFktYvE0_fuQiQdlgifCkkanrtHXpMQsCfrTdw3fU0tQ42FcORJ0e3QWCwNIWFGcZkSKKEw5D_awq0YXw2tq4F5aYe4S6TiOwgwBeN35JowzcE-kds8nCk05lbDGo-II_GTl_ALEg6IEGvVq358ttpnOjyKmN19khdLe4XsBweomn5fWKcs2Qvjmz-Z13HeoTcGuH27n68gxt8-kbSm7rofLbhhTLTG9QBe6k50m04Y48XiyPj4fD3hInbhicW04EILFdijQkF7lRLkSoIVwKtyBlgjhtNCAZwCdzqw5fmt6Rud-8-jIggvDwhsEofcOptd7KNiqASCZQrLt8WFVzhZdAVKFSqQkhLRkn-S499ca4_p6O7JMe96mJbrS5yCjSWWHGk1grH2M9dqcYGEDSdCs019R-zR3czBvHb5L1_r0uzvzhw0GeX8tu-ZhciH-afGeWBzSmXOHK_t-0VMlUbdQ7TKQ8ulq6h3kUYcucagOlHLHZMeQj5o1HO6lrm6hYlrakRtmsLddoZZIZloj6EVd1VjRinid5KP0PViwoqNZsWFhGCxBiDZusuiv5lv_SG7EHtUkkYPx3a-aK8jPPA4EPvLPjlP0zOpwzEmuC-POPNernLf-2nPME_OmKQv2XMWB9axVmRuEubzscrcW25RAWZzvM6jxYaUQBG7MexuZ5KICh-PyCrMsL7uzZHF4FtoBqaxZYszY6hAi19qi_ZEkAAk2br6ULVikJlt4FX-7HLi4kSJBrcXC4FSheWH4_i8BeYbV4NHZNKLqg1ZqVJdw9aOkl49gUxEStgMegWFx32Cn78vEmVtx92gWu7dxqh4lLoZ4zsnN4Fyxnz5MmLj80jHwObodKp_RMN7wV8rYMHkG_lmJw2cHaWllZDgngw0LEoPc9GZd3FxCYFFhbizqo"
+      nonce="9394756197cb53f5db8d130613b9bb5d"
+      charset="UTF-8"
+    ></script>
+    <style>
+      .container {
+        margin: 1rem 2rem;
+        height: 100%;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        border-radius: 5px;
+        box-shadow: 0px 0px 12px rgb(238, 238, 238);
+      }
+      .box-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .card-item {
+        display: flex;
+        align-items: center;
+      }
+      .btn {
+        width: 130px;
+        display: flex;
+        background: #1d4dc1;
+        height: 35px;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 8px;
+      }
+      .confirm-btn {
+        background-color: #1dc185;
+      }
+      .cancel-button {
+        background-color: #ccc;
+        color: black;
+        padding: 7px 32px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+        text-decoration: none;
+      }
+
+      .cancel-button:hover {
+        background-color: #ddd;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 35%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+      }
+
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .btns {
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 15px;
+      }
+      .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+      }
+      .content p,
+      .content h2 {
+        text-align: center;
+      }
+      .success {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .search input {
+        width: 230px;
+        height: 27px;
+        border-radius: 4px;
+        padding-left: 10px;
+        border: 1px solid silver;
+      }
+      #search-btn {
+        border: none;
+        background-color: #42ad8e;
+        padding: 4px 8px;
+        border-radius: 5px;
+        color: #fff;
+      }
+      #search-btn:hover {
+        background-color: #aab6b2;
+      }
+      .box-container a {
+        text-decoration: none;
+        color: #000;
+      }
+      .box-container .btn {
+        color: #fff;
+      }
+    </style>
+    <script>
+      function openModal(id) {
+        var modal = document.getElementById("myModal-" + id);
+        modal.style.display = "block";
+      }
+      function closeModal(id) {
+        var modal = document.getElementById("myModal-" + id);
+        modal.style.display = "none";
+      }
+      function searchTerm() {
+        var searchInput = document.getElementById("search-input");
+        var searchBtn = document.getElementById("search-btn");
+        console.log("search term", searchInput.value.toLowerCase());
+        var searchTerm = searchInput.value.toLowerCase();
+        var elements = document.querySelectorAll(".card");
+        elements.forEach((element) => {
+          if (element.innerText.toLowerCase().includes(searchTerm)) {
+            element.style.display = "block";
+          } else {
+            element.style.display = "none";
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    {% include 'header_employee.html' %} {% load static %}
+    <div class="container">
+      <div class="search">
+        <div>
+          <h1>Apply to jobs</h1>
+          <span
+            >You want to apply to jobs that correspond to your profile?
+            <a href="/project/jobs/applicant/{{applicant}}/recommandations"
+              >click here</a
+            ></span
+          >
+        </div>
+        <div>
+          <div>
+            <input type="text" id="search-input" placeholder="Search" />
+            <button id="search-btn" onclick="searchTerm()">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        {% for job in jobs %}
+        <a href="/project/jobs/applicant/{{applicant}}/{{job.0.job_id}}/view">
+          <div class="card">
+            <div class="card-item">
+              <h2 id="job-title">{{job.0.title}}</h2>
+              <h2>- {{job.1}}</h2>
+            </div>
+            <span>Salary: {{job.0.salary}} DZD</span>
+            <p>Requirements: {{job.0.requirements}}</p>
+            <a class="btn" onclick="openModal('{{job.0.job_id}}')">Apply</a>
+          </div>
+        </a>
+        <div id="myModal-{{job.0.job_id}}" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('{{job.0.job_id}}')"
+              >&times;</span
+            >
+            <div class="content">
+              <h2>{{job.0.title}} - {{job.1}}</h2>
+              <p>Do you want to continue applying to this job ?</p>
+              <div class="btns">
+                <a
+                  href="/project/jobs/applicant/{{applicant}}/{{job.0.job_id}}"
+                  class="btn confirm-btn"
+                  >Confirm</a
+                >
+                <button
+                  type="button"
+                  class="cancel-button"
+                  onclick="closeModal('{{job.0.job_id}}')"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %} {% if success %}
+        <div id="myModal-success" class="success">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('success')">&times;</span>
+            <div class="content">
+              <div class="image">
+                <img src="{% static 'images/succes.png'%}" />
+              </div>
+              <h2>You application has successfully been registered!</h2>
+            </div>
+          </div>
+        </div>
+        {% endif %} {% if error %}
+        <div id="myModal-error" class="success">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('error')">&times;</span>
+            <div class="content">
+              <div class="image">
+                <img src="{% static 'images/Mark.png'%}" />
+              </div>
+              <h2>You have already applied for this job position!</h2>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

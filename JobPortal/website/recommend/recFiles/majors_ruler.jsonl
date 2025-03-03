@@ -1,0 +1,268 @@
+{"label": "MAJOR", "pattern": [{"TEXT": "general agriculture"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "general"}, {"LOWER": "agriculture"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "agricultural economics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "agricultural"}, {"LOWER": "economics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "animal sciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "animal"}, {"LOWER": "sciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "food science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "food"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "forestry"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "forestry"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "natural resources management"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "natural"}, {"LOWER": "resources"}, {"LOWER": "management"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "fine arts"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "fine"}, {"LOWER": "arts"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "music"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "music"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "visual and performing arts"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "visual"}, {"LOWER": "and"}, {"LOWER": "performing"}, {"LOWER": "arts"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "film video and photographic arts"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "film"}, {"LOWER": "video"}, {"LOWER": "and"}, {"LOWER": "photographic"}, {"LOWER": "arts"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "studio arts"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "studio"}, {"LOWER": "arts"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "environmental science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "environmental"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "biology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "biology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "biochemical sciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "biochemical"}, {"LOWER": "sciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "botany"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "botany"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "molecular biology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "molecular"}, {"LOWER": "biology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "ecology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "ecology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "genetics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "genetics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "microbiology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "microbiology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "pharmacology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "pharmacology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "physiology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "physiology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "zoology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "zoology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "neuroscience"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "neuroscience"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "general business"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "general"}, {"LOWER": "business"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "accounting"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "accounting"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "actuarial science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "actuarial"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "business management and administration"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "business"}, {"LOWER": "management"}, {"LOWER": "and"}, {"LOWER": "administration"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "business economics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "business"}, {"LOWER": "economics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "finance"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "finance"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "international business"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "international"}, {"LOWER": "business"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "hospitality management"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "hospitality"}, {"LOWER": "management"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "communications"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "communications"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "journalism"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "journalism"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "mass media"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "mass"}, {"LOWER": "media"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "advertising and public relations"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "advertising"}, {"LOWER": "and"}, {"LOWER": "public"}, {"LOWER": "relations"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "communication technologies"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "communication"}, {"LOWER": "technologies"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "computer and information systems"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "computer"}, {"LOWER": "and"}, {"LOWER": "information"}, {"LOWER": "systems"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "computer science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "computer"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "information sciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "information"}, {"LOWER": "sciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "computer networking and telecommunications"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "computer"}, {"LOWER": "networking"}, {"LOWER": "and"}, {"LOWER": "telecommunications"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "mathematics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "mathematics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "applied mathematics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "applied"}, {"LOWER": "mathematics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "mathematics and computer science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "mathematics"}, {"LOWER": "and"}, {"LOWER": "computer"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "general education"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "general"}, {"LOWER": "education"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "educational administration and supervision"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "educational"}, {"LOWER": "administration"}, {"LOWER": "and"}, {"LOWER": "supervision"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "elementary education"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "elementary"}, {"LOWER": "education"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "mathematics teacher education"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "mathematics"}, {"LOWER": "teacher"}, {"LOWER": "education"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "early childhood education"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "early"}, {"LOWER": "childhood"}, {"LOWER": "education"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "special needs education"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "special"}, {"LOWER": "needs"}, {"LOWER": "education"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "library science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "library"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "architecture"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "architecture"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "general engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "general"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "aerospace engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "aerospace"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "biological engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "biological"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "architectural engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "architectural"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "biomedical engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "biomedical"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "chemical engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "chemical"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "civil engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "civil"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "computer engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "computer"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "electrical engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "electrical"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "environmental engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "environmental"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "industrial and manufacturing engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "industrial"}, {"LOWER": "and"}, {"LOWER": "manufacturing"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "mechanical engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "mechanical"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "metallurgical engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "metallurgical"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "nuclear engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "nuclear"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "petroleum engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "petroleum"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "engineering technologies"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "engineering"}, {"LOWER": "technologies"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "electrical engineering technology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "electrical"}, {"LOWER": "engineering"}, {"LOWER": "technology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "materials science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "materials"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "nutrition sciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "nutrition"}, {"LOWER": "sciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "health and medical administrative services"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "health"}, {"LOWER": "and"}, {"LOWER": "medical"}, {"LOWER": "administrative"}, {"LOWER": "services"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "medical assisting services"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "medical"}, {"LOWER": "assisting"}, {"LOWER": "services"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "nursing"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "nursing"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "english language and literature"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "english"}, {"LOWER": "language"}, {"LOWER": "and"}, {"LOWER": "literature"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "liberal arts"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "liberal"}, {"LOWER": "arts"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "humanities"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "humanities"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "philosophy and religious studies"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "philosophy"}, {"LOWER": "and"}, {"LOWER": "religious"}, {"LOWER": "studies"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "theology and religious vocations"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "theology"}, {"LOWER": "and"}, {"LOWER": "religious"}, {"LOWER": "vocations"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "history"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "history"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "united states history"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "united"}, {"LOWER": "states"}, {"LOWER": "history"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "family and consumer sciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "family"}, {"LOWER": "and"}, {"LOWER": "consumer"}, {"LOWER": "sciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "court reporting"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "court"}, {"LOWER": "reporting"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "public administration"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "public"}, {"LOWER": "administration"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "public policy"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "public"}, {"LOWER": "policy"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "physical sciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "physical"}, {"LOWER": "sciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "chemistry"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "chemistry"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "geosciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "geosciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "oceanography"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "oceanography"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "physics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "physics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "psychology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "psychology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "educational psychology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "educational"}, {"LOWER": "psychology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "clinical psychology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "clinical"}, {"LOWER": "psychology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "counseling psychology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "counseling"}, {"LOWER": "psychology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "industrial and organizational psychology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "industrial"}, {"LOWER": "and"}, {"LOWER": "organizational"}, {"LOWER": "psychology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "social psychology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "social"}, {"LOWER": "psychology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "social work"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "social"}, {"LOWER": "work"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "interdisciplinary social sciences"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "interdisciplinary"}, {"LOWER": "social"}, {"LOWER": "sciences"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "economics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "economics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "criminology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "criminology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "geography"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "geography"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "international relations"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "international"}, {"LOWER": "relations"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "political science and government"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "political"}, {"LOWER": "science"}, {"LOWER": "and"}, {"LOWER": "government"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "sociology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "sociology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "business administration"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "business"}, {"LOWER": "administration"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "economics and management science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "economics"}, {"LOWER": "and"}, {"LOWER": "management"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "entrepreneurship"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "entrepreneurship"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "global management studies"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "global"}, {"LOWER": "management"}, {"LOWER": "studies"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "hr management"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "hr"}, {"LOWER": "management"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "law and business"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "law"}, {"LOWER": "and"}, {"LOWER": "business"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "marketing management"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "marketing"}, {"LOWER": "management"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "real estate management"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "real"}, {"LOWER": "estate"}, {"LOWER": "management"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "medicine"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "medicine"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "public health"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "public"}, {"LOWER": "health"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "pharmacy"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "pharmacy"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "dentistry"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "dentistry"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "physiotherapy"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "physiotherapy"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "physical therapy"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "physical"}, {"LOWER": "therapy"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "health administration"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "health"}, {"LOWER": "administration"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "healthcare management"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "healthcare"}, {"LOWER": "management"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "medical laboratory science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "medical"}, {"LOWER": "laboratory"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "clinical laboratory science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "clinical"}, {"LOWER": "laboratory"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "occupational therapy"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "occupational"}, {"LOWER": "therapy"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "public health nutrition"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "public"}, {"LOWER": "health"}, {"LOWER": "nutrition"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "dietetics"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "dietetics"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "english literature"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "english"}, {"LOWER": "literature"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "political science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "political"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "art history"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "art"}, {"LOWER": "history"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "geology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "geology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "agricultural science"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "agricultural"}, {"LOWER": "science"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "anthropology"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "anthropology"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "film studies"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "film"}, {"LOWER": "studies"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "computer information systems"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "computer"}, {"LOWER": "information"}, {"LOWER": "systems"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "communication arts"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "communication"}, {"LOWER": "arts"}]}
+{"label": "MAJOR", "pattern": [{"TEXT": "software engineering"}]}
+{"label": "MAJOR", "pattern": [{"LOWER": "software"}, {"LOWER": "engineering"}]}

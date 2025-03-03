@@ -1,0 +1,11 @@
+{"label": "DEGREE", "pattern": [{"TEXT": "bachelor's"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "bachelor"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "master's"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "master"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "phd"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "associate's"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "associate"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "vocational's"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "vocational"}]}
+{"label": "DEGREE", "pattern": [{"LOWER": "high"}, {"LOWER": "school"}]}
+{"label": "DEGREE", "pattern": [{"TEXT": "high"}, {"TEXT": "school"}]}
