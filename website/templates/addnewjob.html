@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Job Posting</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+h1 {
+  margin-left: 16rem;
+  margin-top: 2rem;
+}
+form{
+  width: 64%;
+  margin: 1rem 16rem;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #3b47f3;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7d85f7;
+}
+.cancel-button {
+  background-color: #ccc;
+  color: black;
+  padding: 9px 32px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.cancel-button:hover {
+  background-color: #ddd;
+}
+
+  </style>
+</head>
+<body>
+  {% include 'headerEmployer.html' %}
+  <h1>Add New Job</h1>
+  <form action="{% url 'new_job' employer_id %}" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="job_title">Job Title:</label>
+      <input type="text" name="job_title" id="job_title" required>
+    </div>
+    <div class="form-group">
+      <label for="job_description">Job Description:</label>
+      <textarea name="job_description" id="job_description" cols="30" rows="10" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="salary">Salary:</label>
+      <input type="number" name="salary" id="salary" required></input>
+    </div>
+    <div class="form-group">
+      <label for="requirements">Requirements:</label>
+      <input type="text" name="requirements" id="requirements" required></input>
+    </div>
+    <div class="form-group">
+      <label for="location">Location (City, State):</label>
+      <input type="text" name="location" id="location" required>
+    </div>
+    <div class="form-group">
+      <label for="closing-date">Closing Date</label>
+      <input type="date" name="closing-date" id="closing-date" required>
+    </div>
+    <div class="form-group">
+      <label for="required_applicants">Number of Applicants Needed</label>
+      <input type="number" name="required_applicants" id="required_applicants" required>
+  </div>
+    <div class="form-group form-buttons">
+      <button type="submit">Add Job</button>
+      <a href="/project/jobs/{{employer_id}}" class="cancel-button">Cancel</a>
+    </div>
+  </form>
+</body>
+</html>

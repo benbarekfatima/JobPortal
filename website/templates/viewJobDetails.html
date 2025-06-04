@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Payroll</title>
+    <script
+      type="text/javascript"
+      src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FHhk635QPEK5obY-lfegU0-f5sjJcpQgN4LoA6EMN9ghpxkRLVHh0RaRB2IVbXR_jPmV_ViyN7p_HPcorFEL9u94k4tthPJSpXNSEyCI2sEZo0Gq8EnNvqI7wvStoWcUSyVB_cvCbvtKbnunfz1DzECWaWk0nlIuE1e7QK-srur8oIpp2iMWFWmSxGl5TRH_fX-kc5UpVhgQqUrPJ4z3nEXffX7vxrqouxpenE240U-qY24tudyNbRR3HecJfWwH8n8UOtMC0T4nhlYlWtYuWfn15PlczME3lvCZApTKe-U24WPZvvgUpCUukY1C8ohgdHLteCjrk7x-L3sbVSJLw4KPPRgdDSjsIBGD1dXWyHCkbB7meSFlQFbqt4MIvFAu0LTBFZOUjGo20fF6ZPAUH2BUv0AEYbuivzx3gRuthfbGsTXkIQG8frWCVr4rcuu8XdqCcUaGVEHukITjJVwhmwGn15e4FYEg8WvlTErcHJLWwVnGE19ihYoQt_L-3Udw-SpDj1qzP8Q_lI28ORyesGDuaRujahIzxRghsdfBs8DttI2yMTz-e64LMfZ_wdNv5QFSjomY8qC8GRr2ffUiMyP-FpnjiPN2z5xHTuzh2z2ugSBzF7jV_iGqczbJfdYEfuFrDKFoCe6gvMzz4KvLepOp4jXVNG8rdHBDb24ovqGblDxyX3xkN2nBVIbdFRO3FoT8cNduuiaaC-MacyqO-T_soZyvgW_g_Et9B8owmfghzR4jqfqnelfE29uSm8OxOhq5r_DPzWxjbVp33HE3OugvyjYeHfC-RXJzXqroYkhB9cU2DxSw-nFYWiPVqujPbTijWKTgtX346ulEQxUsOrFFCNheK5nO3Y4lypi7Wk7u8iEqNZwdGjcssljMKqhSsfoM8JNnjpAiH_0jstVGg2d0RiF9Xj9OAO0O5jNMidqY-cS8t6o_pmCDvChpuobO2vJSYxcAleR1AbwD0EvEFDq9raKhK5Gb0ifDSINPPCG3d1T68XL_LB4IDF_tPlYXetqP8tTZUk35dgmAKqFWjXH6OJYMGntIsIEF3CwcoOHxpzkpuQynsKjP0g33Ori036MvXuDV-QjTouUaUMWNlX874DxVlWRjHIGdVjgmfRGJ8sE8JfhNSqSI2wGoRmoku7n6WbR4ROT6IIW3DoR8-Y1p0zPaDx5akq5Utr8MdZ6jOOy5H6iw8iqiZobMomKBTwNZ77kzOteVvLxMBbumrUWfRWVNE90u9n8AAfvRjr9v1nLJBFQ-5s3iXKNBikP1KzLLDC5d2rE5IziWvx9FRTfVWSs2zhqlxiP5BBA64b5H6Ezs6jZ5Ms8zYngfr2D30EDOeY4qdtrL8-kJs8qSHVFYYgq03SZCZgN4l9bVyR4LRKpIN5WxntfNMp6rtM5mK7_fBL4a0IXepgxCHMuKQHRoUtUNAOrux9kL6Vk_yljAq2hvP_Z52pvHUhzGGFtBIp2vrlBM5QRh1AYaZkTc2SuRQEY54os6BRot0660e8z31u2xE9MtKbJECRnij-Shnhsvp5wW1_QiOp__5prTpnwYorhy4FcyD6Z-wqGlWXxUgexYfP_2aQVExhHm2uIk3QxKKjFEvcpVFM8SPILJq3zOe3yA-YtamP0cZdtWNi8WqzFr2NAAeSWh7QVvdv34vLPvHhUPSfmUI9l8XAv5nU5akSRfXOqN6MiXSahWfMAy01foRT5EAC2u0LKtxllF7mbE0pQLJxBTX5JAYBos07gV_FJTAo0dVsE_TvcI-kU"
+      nonce="71c39aa6bb3679e0c845515064a3d873"
+      charset="UTF-8"
+    ></script>
+    <style>
+      .box-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        padding: 3rem 3rem;
+        gap: 1rem;
+        border-radius: 5px;
+        margin: 3rem 2rem;
+      }
+      .btn {
+        width: 130px;
+        display: flex;
+        background: #1d4dc1;
+        height: 40px;
+        border-radius: 6px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 35%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+      }
+
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .btns {
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 15px;
+      }
+      .confirm-btn {
+        background-color: #1dc185;
+      }
+      .cancel-button {
+        background-color: #ccc;
+        color: black;
+        padding: 7px 32px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+        text-decoration: none;
+      }
+
+      .cancel-button:hover {
+        background-color: #ddd;
+      }
+      .content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+      }
+      .content p,
+      .content h2 {
+        text-align: center;
+      }
+      .success {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <script>
+      function openModal(id) {
+        var modal = document.getElementById("myModal-" + id);
+        modal.style.display = "block";
+      }
+      function closeModal(id) {
+        var modal = document.getElementById("myModal-" + id);
+        modal.style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    {% include 'header.html' %} {% load static %}
+    <div class="box-container">
+      <h2>{{job.title}} - {{job.employer}}</h2>
+      <p>{{job.description}}</p>
+      <span>Salary: {{job.salary}} DZD</span>
+      <p>Requirements: {{job.requirements}}</p>
+      <a class="btn" onclick="openModal('{{job.job_id}}')">Apply</a>
+    </div>
+    <div id="myModal-{{job.job_id}}" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('{{job.job_id}}')"
+          >&times;</span
+        >
+        <div class="content">
+          <h2>{{job.title}} - {{job.employer}}</h2>
+          <p>Do you want to continue applying to this job ?</p>
+          <div class="btns">
+            <a
+              href="{% url 'apply_job' applicant=applicant job_id=job.job_id %}"
+              class="btn confirm-btn"
+              >Confirm</a
+            >
+
+            <button
+              type="button"
+              class="cancel-button"
+              onclick="closeModal('{{job.job_id}}')"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if success %}
+    <div id="myModal-success" class="success">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('success')">&times;</span>
+        <div class="content">
+          <div class="image">
+            <img src="{% static 'images/succes.png'%}" />
+          </div>
+          <h2>You application has successfully been registered!</h2>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </body>
+</html>
